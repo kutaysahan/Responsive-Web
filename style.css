@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.menu_bar {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: rgb(93, 182, 93);
+}
+
+.menu {
+    width: 25%;
+    float: left;
+}
+
+.metinler {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li {
+    background-color: rgb(89, 118, 199);
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.menu li:hover {
+    background-color: red;
+}
+
+.metin_box {
+    border: 1px solid black;
+    padding-top: 30px;
+    background-color: rgb(231, 221, 221);
+    position: relative;
+}
+
+.metin {
+    padding: 10px;
+    float: left;
+}
+
+.metin p {
+    padding: 10px;
+}
+
+.baglantilar {
+    width: 25%;
+    float: left;
+    background-color: rgb(83, 83, 202);
+    margin-top: 10px;
+}
+
+.baglantilar p {
+    padding: 10px;
+}
+
+.baglantilar p a {
+    text-decoration: none;
+    color: black;
+}
+
+#baslik1,
+#baslik2,
+#baslik3,
+#baslik4,
+#baslik5,
+#baslik6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1px solid black;
+    background-color: rgb(211, 205, 223);
+    padding: 5px;
+}
+
+.alt_kisim {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    clear: both;
+    bottom: 0px;
+}
+
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+    .metin {
+        width: 50%;
+    }
+}
+
+
+/********** Medium devices only **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .metin {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/********** Mobile  only **********/
+
+@media (max-width: 767px) {
+    .menu {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .menu ul li {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .metin {
+        margin-bottom: 10px;
+    }
+    .metinler {
+        width: 100%;
+    }
+    .metin_box {
+        width: 100%;
+    }
+    .baglantilar {
+        width: 100%;
+    }
+}
